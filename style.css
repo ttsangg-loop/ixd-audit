@@ -24,3 +24,15 @@ p {
 	display:block;
 	clear:both;
 }
+
+.spacer2 {
+	height:2vh;
+	width:100%;
+	/*background: pink;*/
+	display:block;
+	clear:both;
+}
+
+a {
+	color:#44B8AF;
+}
