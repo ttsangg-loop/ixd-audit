@@ -53,6 +53,11 @@ body {
     clear: both;
 }
 
+.row {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
     padding-right: 15px;
     padding-left: 15px;

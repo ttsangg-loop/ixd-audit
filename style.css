@@ -36,3 +36,7 @@ p {
 a {
 	color:#44B8AF;
 }
+
+.img-responsive {
+	width:100%;
+}
