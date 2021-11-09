@@ -106,13 +106,19 @@
 		<div class="spacer"></div>
 		<div class="col-8">
 			<h3>Deleting Things</h3>
-			<p>When you choose to delete something (which will often be hidden in an overflow menu), you are prompted to confirm via modal. The button that indicates confirmation of this non-reversible state is red. Confirmation will appear in the form of a banner.</p>
+			<p>When you choose to delete something (which will often be hidden in an overflow menu), you are prompted to confirm via modal. The button that indicates confirmation of this non-reversible state is red. Confirmation will often appear in the form of a banner although this behaviour is not consistent across the platform.</p>
 		</div>
 		
 		<div class="row">
 			<div class="col-4">
 				<video width=100% height="auto" controls>
 				  <source src="../assets/Banner/1.mov" type="video/mp4">
+				</video>
+				<!-- <p class="caption"></p> -->
+			</div>
+			<div class="col-4">
+				<video width=100% height="auto" controls>
+				  <source src="../assets/delete2.mov" type="video/mp4">
 				</video>
 				<!-- <p class="caption"></p> -->
 			</div>
@@ -134,20 +140,20 @@
 		<div class="spacer"></div>
 		<div class="col-8">
 			<h3>Editing/Adding a Library Answer</h3>
-			<p>//</p>
+			<p>When you edit a library answer, you are taken into the "backroom" of the entry - you are able to tweak its tags, its location, add alerts, link other entries, etc... The alert feature is currently available only to library entries as well and is used as a way to flag usage of this entry across other projects.</p>
 		</div>
 		<div class="row">
 			<div class="col-4">
 				<video width=100% height="auto" controls>
 				  <source src="../assets/Library/1mov.mov" type="video/mp4">
 				</video>
-				<p class="caption">//</p>
+				<p class="caption"></p>
 			</div>
 			<div class="col-4">
 				<video width=100% height="auto" controls>
-				  <!-- <source src="../assets/Tooltip/2.mov" type="video/mp4"> -->
+				  <source src="../assets/alert1.mov" type="video/mp4">
 				</video>
-				<p class="caption">//</p>
+				<p class="caption">Starting in the PWS workspace, you can see alerts that were previously written for the library entry in question - you can only edit the alert if you return to the library entry and edit via "Edit Entry".</p>
 			</div>
 			<!-- <div class="col-4">
 				<video width=100% height="auto" controls>
@@ -163,26 +169,28 @@
 		<div class="spacer"></div>
 		<div class="col-8">
 			<h3>Importing a File</h3>
-			<p>//</p>
+			<!-- <p>//</p> -->
 		</div>
 		<div class="row">
 			<div class="col-4">
 				<video width=100% height="auto" controls>
-				  <!-- <source src="../assets/VisibleInvisible.mov" type="video/mp4"> -->
+				  <source src="../assets/Import1.mov" type="video/mp4">
 				</video>
-				<p class="caption">//</p>
+				<p class="caption">When you choose to import a file (upon project creation or adding a file after), the system takes a bit of time to read the file. Then you are guided to a highlightable source view where you can auto-select all the system-read questions.</p>
 			</div>
 			<div class="col-4">
 				<video width=100% height="auto" controls>
-				  <!-- <source src="../assets/VisibleInvisible.mov" type="video/mp4"> -->
+				  <source src="../assets/Import2.mov" type="video/mp4">
 				</video>
-				<p class="caption">//</p>
+				<p class="caption">Elements that were not initially highlighted or flagged as prospective questions/sections/subsections can be manually highlighted and tagged. This tags all other elements that the system reads follows the same hierarchy. From here, you are able to change the type of question or tag, although it similarly applies to all subsequent sections unless you choose to toggle off the auto-select feature.</p>
+				<p class="caption">You are also able to set Compliance and Additional Answer sets here.</p>
 			</div>
 			<div class="col-4">
 				<video width=100% height="auto" controls>
-				  <!-- <source src="../assets/VisibleInvisible.mov" type="video/mp4"> -->
+				  <source src="../assets/Import3.mov" type="video/mp4">
 				</video>
-				<p class="caption">//</p>
+				<p class="caption">Note that there are some usability issues with hovering and clicking around to denote what the highlighted text is.</p>
+				<p class="caption">After highlighting and selecting the appropriate text, you can click "Import", which will pull up a confirmation modal of elements before the questions are brought to the PWS.</p>
 			</div>
 		</div>
 
@@ -190,26 +198,20 @@
 		<div class="spacer"></div>
 		<div class="col-8">
 			<h3>Additional answers/compliance answers</h3>
-			<p>//</p>
+			<!-- <p>//</p> -->
 		</div>
 		<div class="row">
 			<div class="col-4">
 				<video width=100% height="auto" controls>
 				  <source src="../assets/compliance1.mov" type="video/mp4">
 				</video>
-				<p class="caption">//</p>
+				<p class="caption">You are able to adjust the settings/mappings of Compliance Sets and Additional Answers in the project itself (post-import). Compliance Sets appear as dropdowns with values depending on the mapping. If you have not mapped an Additional Answer to the question, you will receive an error message if you try to select it.</p>
 			</div>
 			<div class="col-4">
 				<video width=100% height="auto" controls>
-				  <!-- <source src="../assets/VisibleInvisible.mov" type="video/mp4"> -->
+				  <source src="../assets/AA1.mov" type="video/mp4">
 				</video>
-				<p class="caption">//</p>
-			</div>
-			<div class="col-4">
-				<video width=100% height="auto" controls>
-				  <!-- <source src="../assets/VisibleInvisible.mov" type="video/mp4"> -->
-				</video>
-				<p class="caption">//</p>
+				<p class="caption">If you have mapped an Additional Answer to your entry, you are able to type in it just as you would type in a main answer. If you "Clear Entry", you will remove everything, including the Additional Answer (and any Compliance Sets as needed). You are also able to remove the mapping through the entry as well.</p>
 			</div>
 		</div>
 
@@ -217,28 +219,29 @@
 		<div class="spacer"></div>
 		<div class="col-8">
 			<h3>Error States</h3>
-			<p>//</p>
+			<p>Loopio uses error states and messaging through modals, preventing actions, etc... to explain why certain actions cannot be done and/or to stop users from brute forcing something if they have not input all required information.</p>
 		</div>
 		<div class="row">
 			<div class="col-4">
 				<video width=100% height="auto" controls>
 				  <source src="../assets/error1.mov" type="video/mp4">
 				</video>
-				<p class="caption">//</p>
+				<p class="caption">If an Additional Answer has not been mapped to this entry, then users will receive an error message when they try to edit it.</p>
 			</div>
 			<div class="col-4">
 				<video width=100% height="auto" controls>
 				  <source src="../assets/Modal/1.mov" type="video/mp4">
 				</video>
-				<p class="caption">//</p>
+				<p class="caption">When creating a new project, users are unable to continue creating the project (and closing the modal) without filling in the missing information. Error messaging explains what is required/why their request was denied.</p>
 			</div>
 			<div class="col-4">
 				<video width=100% height="auto" controls>
-				  <!-- <source src="../assets/VisibleInvisible.mov" type="video/mp4"> -->
+				  <source src="../assets/error2.mov" type="video/mp4">
 				</video>
-				<p class="caption">//</p>
+				<p class="caption">When creating a Merge Variable, users are also given error messages to explain why their action could not be completed. Note that when the user begins to edit any field, all error messaging disappears (perhaps not the best due to lack of transparency on what actually changed).</p>
 			</div>
 		</div>
+		<div class="spacer"></div>
 
 
 

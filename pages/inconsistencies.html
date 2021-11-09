@@ -1,0 +1,308 @@
+<html>
+<head>
+	<link rel="stylesheet" href="../grid.css"/>
+	<link rel="stylesheet" href="../style.css"/>
+	<title>Design System IxD Audit</title>
+	<link rel="icon" href="../assets/eyes.png" type="image/x-icon">
+</head>
+
+<body>
+	<div class="container">
+		<div class="col-8">
+			<p class="caption">
+				<a href="../index.html">Back to home</a>
+			</p>
+			<h1>Inconsistencies</h1>
+			<p>
+				The Loopio platform is stuck between shifting to Loopui (v.1.0 and v.2.0) as well as migrating UI and IxD patterns from Bootstrap. This page identifies some of these Bootstrap -> Loopio inconsistencies so we have a better idea of what remains yet to be changed.
+			</p>
+		</div>
+		<div class="spacer"></div>
+
+		<!--- section 1 -->
+		<div class="col-8">
+			<h3>Search Inputs</h3>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<video width=100% height="auto" controls>
+				  <source src="../assets/Inconsistencies/1.mov" type="video/mp4">
+				</video>
+				<p class="caption">The "Select Team Member" is an unintuitive combination of a dropdown menu and a type to search input.</p>
+			</div>
+			<div class="col-6">
+				<video width=100% height="auto" controls>
+				  <source src="../assets/Inconsistencies/4.mov" type="video/mp4">
+				</video>
+				<p class="caption">Here, you can see multiple different searches in the PWS - 3 types of search on one page, each searching for something else. This turns the experience into something clumsy and cumbersome.</p>
+			</div>
+		</div>
+
+		<div class="spacer"></div>
+		<div class="row">
+			<div class="col-4">
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/1.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-4">
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/2.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-4">
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/3.png">
+				<div class="spacer"></div>
+			</div>
+		</div>
+		<div class="spacer"></div>
+
+		
+		<hr/>
+
+		<!--- section 2 -->
+		<div class="col-8">
+			<h3>Tables</h3>
+			<p>Tables are inconsistent between Bootstrap and Loopui styling.
+					<ul>
+						<li>
+							In the first & second images, here are things featured at the top (left) of the table - # results and functions (e.g. Export) are typically seen on the right (e.g. PWS).
+						</li>
+						<li>
+							Pagination is featured at the top left (image 1, 2) whereas in the third image, it is featured at the bottom of the table.
+						<li>
+							The header row in the first & second images is styled differently and denotes a primary key
+						</li>
+						<li>
+							Visual tweaks, such as different row colours, background colours, having a title to the table, etc...
+						</li>
+					</ul>
+				</p>
+		</div>
+		<div class="spacer"></div>
+		<div class="row">
+			<div class="col-6">
+				<p class="caption">1. Reporting > Usage Report (old Bootstrap styling)</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/4.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-6">
+				<p class="caption">2. Admin > Users (old Bootstrap styling)</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/6.png">
+				<div class="spacer"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<p class="caption">3. Dashboard (new Loopui styling)</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/5.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-6">
+				<p class="caption">4. Admin > Backups (old Bootstrap styling) - this table is infinite scroll and does not follow any other convention on the platform.</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/8.png">
+				<div class="spacer"></div>
+			</div>
+		</div>
+		<hr/>
+
+		<!--- section -->
+		<div class="col-8">
+			<h3>Filtering</h3>
+			<p>Old Bootstrap employs multiple dropdowns with a filter button on the side. You are able to select multiple values and filter the final result. Examples of these pages include Reviews, Library > Tags, Library > Attachments, Library > Duplicates, Reporting (all three subtabs), and Admin.
+			</p>
+			<p>
+			The rest of the platform employs a vertical side panel on the left (e.g. Library) or dropdown menus.
+		</p> 
+		</div>
+		<div class="spacer"></div>
+		<div class="row">
+			<div class="col-4">
+				<p class="caption">Admin > Users (old Bootstrap styling)</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/7.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-4">
+				<p class="caption">Library (new Loopui styling)</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/9.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-4">
+				<p class="caption">PWS Filters (new Loopui styling)</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/10.png">
+				<div class="spacer"></div>
+			</div>
+		</div>
+		<hr/>
+
+		<!--- section -->
+		<div class="col-8">
+			<h3>Input Fields</h3>
+			<p>Some sections in the Admin tab still use an old style of displaying an editable text box. </p> 
+		</div>
+		<div class="spacer"></div>
+		<div class="row">
+			<div class="col-4">
+				<p class="caption">Admin > Teams (hover) - Bootstrap</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/11.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-4">
+				<p class="caption">Admin > Teams (input) - Bootstrap</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/13.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-4">
+				<p class="caption">Library > Merge Variables (input) - Loopui</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/12.png">
+				<div class="spacer"></div>
+			</div>
+		</div>
+		<hr/>
+
+		<!--- section -->
+		<div class="col-8">
+			<h3>Deletion modal</h3>
+			<p>The deletion modal differs depending on if it is Bootstrap or Loopui. They function similarly but have different layouts, messaging, and levels of readibility.</p> 
+		</div>
+		<div class="spacer"></div>
+		<div class="row">
+			<div class="col-6">
+				<p class="caption">Admin > Teams - Bootstrap</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/14.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-6">
+				<p class="caption">Projects - Loopui</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/15.png">
+				<div class="spacer"></div>
+			</div>
+		</div>
+		<hr/>
+
+		<!--- section -->
+		<div class="col-8">
+			<h3>Error messaging/prevention</h3>
+			<p>In older Bootstrap parts of the platform, error messaging is unclear. In the first image, I am stopped after a certain character limit without any explanation and am able to save my work without issues. In the second, newer image, I am able to write as much as I need and given an explanation why I am unable to submit.</p> 
+		</div>
+		<div class="spacer"></div>
+		<div class="row">
+			<div class="col-6">
+				<p class="caption">Admin > Teams - Bootstrap</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/16.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-6">
+				<p class="caption">Library > Merge Variables - Loopui</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/17.png">
+				<div class="spacer"></div>
+			</div>
+		</div>
+		<hr/>
+
+		<!--- section -->
+		<div class="col-8">
+			<h3>Half-width cards</h3>
+			<p>These cards (plus a gigantic green button in the top right corner to add a card) are only seen in the Bootstrap corners of the platform (Admin tab). The Library > Tags page features similar cards with a smaller button in the top right corner.</p> 
+		</div>
+		<div class="spacer"></div>
+		<div class="row">
+			<div class="col-4">
+				<p class="caption">Admin > Teams - Bootstrap</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/18.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-4">
+				<p class="caption">Admin > Project Plan Template - Bootstrap</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/19.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-4">
+				<p class="caption">Library > Tags - Bootstrap</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/24.png">
+				<div class="spacer"></div>
+			</div>
+		</div>
+		<hr/>
+
+		<!--- section -->
+		<div class="col-8">
+			<h3>Pagination</h3>
+			<p>Only the Admin tab does not have easily accessible sub-tabs that appear as a sort of overflow menu. Bootstrap pagination appears more as a row of tabs at the very top.</p> 
+		</div>
+		<div class="spacer"></div>
+		<div class="row">
+			<div class="col-6">
+				<p class="caption">Admin - Bootstrap</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/21.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-6">
+				<p class="caption">Menu - Loopui</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/20.png">
+				<div class="spacer"></div>
+			</div>
+		</div>
+		<hr/>
+
+		<!--- section -->
+		<div class="col-8">
+			<h3>Review Cycles</h3>
+			<p>You can set a review cycle for library entries and for Project Plan Templates (Admin tab). The functionality for Project Plan Templates is unknown but it appears to help set checkpoints and milestones in place. Nevertheless, these two modals appear to set a deadline or date for a future check-in.</p> 
+		</div>
+		<div class="spacer"></div>
+		<div class="row">
+			<div class="col-6">
+				<p class="caption">Admin > Project Plan Templates - Bootstrap</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/22.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-6">
+				<p class="caption">Library - Loopui</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/23.png">
+				<div class="spacer"></div>
+			</div>
+		</div>
+		<hr/>
+
+		<!--- section -->
+		<div class="col-8">
+			<h3>Library Duplicates</h3>
+			<p>The Library tab has a subpage meant to explore library entries that have been flagged as duplicates. Unfortunately, the styling is unlike anything else on the platform.</p> 
+		</div>
+		<div class="spacer"></div>
+		<div class="row">
+			<div class="col-6">
+				<video width=100% height="auto" controls>
+				  <source src="../assets/Inconsistencies/2.mov" type="video/mp4">
+				</video>
+				<p class="caption">Library Duplicates has a number of filtering mechanisms/dropdowns as well as unclear paths back and forth between each step. Lastly, the interface and interactions are completely different from anything else on the platform.</p>
+			</div>
+		</div>
+		<div class="spacer"></div>
+		<div class="row">
+			<div class="col-4">
+				<p class="caption">Library > Library Duplicates</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/25.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-4">
+				<p class="caption">When you click on an entry</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/26.png">
+				<div class="spacer"></div>
+			</div>
+			<div class="col-4">
+				<p class="caption">When you click to "Compare and Edit"</p>
+				<img class="img-responsive" src="../assets/Inconsistencies/pics/27.png">
+				<div class="spacer"></div>
+			</div>
+		</div>
+		<div class="spacer"></div>
+
+
+
+
+
+
+	</div>
+</body>
+
+</html>
